@@ -1,3 +1,33 @@
-<%= link_to 'Home', root_path %>
-<%= link_to 'About', about_path %>
-<%= link_to 'New course', courses_new_path %>
+<ul id="dropdown_acc" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+<nav>
+  <div class="container nav-wrapper">
+    <%= link_to 'Tech Univ', root_path , {class: "brand-logo right"} %>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="left hide-on-med-and-down">
+      <li><%= link_to 'Courses', '' %></li>
+      <li><%= link_to 'Enrollments', '' %></li>
+      <li><%= link_to 'About', about_path %></li>
+      <li>
+        <a class="dropdown-trigger" href="#!" data-target="dropdown_acc">
+          Account<i class="material-icons right">arrow_drop_down</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><%= link_to 'Courses', '' %></li>
+  <li><%= link_to 'Enrollments', '' %></li>
+  <li><%= link_to 'About', about_path %></li>
+  <li>
+    <a class="dropdown-trigger" href="#!" data-target="dropdown_acc">
+      Account<i class="material-icons right">arrow_drop_down</i>
+    </a>
+  </li>
+</ul>
