@@ -9,3 +9,8 @@ c1 = Course.create(short_name: 'CS111', name: "Intro to Compute Science", descri
 c2 = Course.create(short_name: 'CS112', name: "Basics of Compute Science", description: "Intermediate look to Compute Science")
 c3 = Course.create(short_name: 'CS201', name: "Advance of Compute Science", description: "Advance look to Compute Science")
 c4 = Course.create(short_name: 'CS301', name: "Specifics of Algorithms", description: "Advanced algorithm of programming")
+
+s1 = Student.create(name: 'Luke', email: 'luke_student@gmail.com')
+s2 = Student.create(name: 'John', email: 'john_student@gmail.com')
+s3 = Student.create(name: 'Bob', email: 'bob_student@gmail.com')
+s4 = Student.create(name: 'Tom', email: 'tom_student@gmail.com')
