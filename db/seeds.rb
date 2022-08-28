@@ -13,6 +13,7 @@ c4 = Course.create(short_name: 'CS301', name: "Specifics of Algorithms", descrip
 pwd = "pwd"
 # check password $> obj.authenticate("pwd")
 
+s0 = Student.create(name: 'Admin', email: 'admin@gmail.com', password: '123456')
 s1 = Student.create(name: 'Luke', email: 'luke_student@gmail.com', password: pwd)
 s2 = Student.create(name: 'John', email: 'john_student@gmail.com', password: pwd)
 s3 = Student.create(name: 'Bob', email: 'bob_student@gmail.com', password: pwd)
