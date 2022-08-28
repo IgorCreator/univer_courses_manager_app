@@ -1,4 +1,4 @@
-<div class="row center">
+<div class="row center sign-up-form">
   <div class="col s3 m3">
   </div>
   <div class="col s6 m6">
@@ -9,7 +9,7 @@
         <p>Course Enrollments: None</p>
       </div>
       <div class="card-action">
-        <%= link_to "Edit", edit_student_path(@student) %>
+        <%= link_to 'Edit profile <i class="material-icons right">create</i>'.html_safe, edit_student_path(@student), class: "waves-effect waves-light btn" %>
       </div>
     </div>
   </div>

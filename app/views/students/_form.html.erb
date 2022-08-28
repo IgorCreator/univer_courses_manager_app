@@ -1,0 +1,43 @@
+<% if @student.errors.any? %>
+  <%= render 'shared/errors', obj: @student %>
+<% end %>
+
+<div class="container">
+  <div class="row center sign-up-form">
+    <div class="col s12 m12 l12">
+      <div class="card-panel">
+
+        <h3 class="header">
+          <%= @student.new_record? ? "Sign Up" : 'Edit profile' %>
+        </h3>
+
+        <div class="row">
+          <%= form_for(@student, html: { class: "col s12" }) do |f| %>
+            <div class="row">
+              <div class="input-field col s6">
+                <%= f.text_field :name, placeholder: "Enter your full name", autofocus: true %>
+                <%= f.label :name %>
+              </div>
+              <div class="input-field col s6">
+                <%= f.text_field :email, placeholder: "Enter your email" %>
+                <%= f.label :email %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <%= button_to '', { remote: true, class: "waves-effect waves-light btn-large" } do %>
+                  <% if @student.new_record? %>
+                    Sign up <i class="material-icons right">send</i>
+                  <% else %>
+                    Update data <i class="material-icons right">send</i>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
