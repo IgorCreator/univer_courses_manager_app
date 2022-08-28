@@ -7,4 +7,6 @@ class Student < ApplicationRecord
             uniqueness: { case_sensitive: false },
             format: { with: VALID_EMAIL_REGEX }
   validates_uniqueness_of :name, :email
+
+  has_secure_password
 end
