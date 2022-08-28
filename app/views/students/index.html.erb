@@ -9,6 +9,8 @@
 
 <div class="row">
   <% @students.each do |student| %>
-    <%= render partial: 'student', locals: {student: student} %>
+    <div class="col s6 m6">
+      <%= render partial: 'student', locals: {student: student} %>
+    </div>
   <% end %>
 </div>

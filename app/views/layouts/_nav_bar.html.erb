@@ -1,9 +1,11 @@
 <ul id="dropdown_pc" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
+  <li><%= link_to 'Students', students_path %></li>
 </ul>
+
+<ul id="dropdown_mobile" class="dropdown-content">
+  <li><%= link_to 'Students', students_path %></li>
+</ul>
+
 <nav>
   <div class="container nav-wrapper">
     <%= link_to 'Tech Univ', root_path , {class: "brand-logo right"} %>
@@ -11,7 +13,6 @@
     <ul class="left hide-on-med-and-down">
       <li><%= link_to 'Courses', '' %></li>
       <li><%= link_to 'Enrollments', '' %></li>
-      <li><%= link_to 'About', about_path %></li>
       <li>
         <a class="dropdown-trigger" href="#!" data-target="dropdown_pc">
           Account<i class="material-icons right">arrow_drop_down</i>
@@ -21,17 +22,9 @@
   </div>
 </nav>
 
-
-<ul id="dropdown_mobile" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
 <ul class="sidenav" id="mobile-demo">
   <li><%= link_to 'Courses', '' %></li>
   <li><%= link_to 'Enrollments', '' %></li>
-  <li><%= link_to 'About', about_path %></li>
   <li>
     <a class="dropdown-trigger" href="#!" data-target="dropdown_mobile">
       Account<i class="material-icons right">arrow_drop_down</i>
