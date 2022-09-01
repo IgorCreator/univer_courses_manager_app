@@ -1,8 +1,9 @@
 <ul id="dropdown_pc" class="dropdown-content">
   <% if logged_in? %>
+    <li><%= link_to 'Profile', student_path(current_user) %></li>
+    <li class="divider"></li>
     <li><%= link_to 'Log out', logout_path, method: :delete  %></li>
     <li class="divider"></li>
-    <li><%= link_to 'Students', students_path %></li>
     <li><%= link_to 'Add new students', new_student_path %></li>
   <% else %>
     <li><%= link_to 'Login', login_path%></li>
@@ -11,9 +12,10 @@
 
 <ul id="dropdown_mobile" class="dropdown-content">
   <% if logged_in? %>
+    <li><%= link_to 'Profile', student_path(current_user) %></li>
+    <li class="divider"></li>
     <li><%= link_to 'Log out', logout_path, method: :delete %></li>
     <li class="divider"></li>
-    <li><%= link_to 'Students', students_path %></li>
     <li><%= link_to 'Add new students', new_student_path %></li>
   <% else %>
     <li><%= link_to 'Login', login_path %></li>
