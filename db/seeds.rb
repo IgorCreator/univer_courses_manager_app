@@ -18,3 +18,12 @@ s1 = Student.create(name: 'Luke', email: 'luke_student@gmail.com', password: pwd
 s2 = Student.create(name: 'John', email: 'john_student@gmail.com', password: pwd)
 s3 = Student.create(name: 'Bob', email: 'bob_student@gmail.com', password: pwd)
 s4 = Student.create(name: 'Tom', email: 'tom_student@gmail.com', password: pwd)
+
+s1.courses << c1
+s1.courses << c2
+s2.courses << c2
+s2.courses << c3
+s2.courses << c4
+s3.courses << c3
+s4.courses << c1
+s4.courses << c4

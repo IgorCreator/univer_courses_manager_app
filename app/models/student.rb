@@ -9,4 +9,7 @@ class Student < ApplicationRecord
   validates_uniqueness_of :name, :email
 
   has_secure_password
+
+  has_many :enrollments
+  has_many :courses, through: :enrollments
 end
