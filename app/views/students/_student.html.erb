@@ -6,6 +6,6 @@
   </div>
   <div class="card-action">
     <%= link_to "View profile", student_path(student) %>
-    <%= link_to "Edit", edit_student_path(student) %>
+    <%= link_to "Edit", edit_student_path(student) if current_user == student %>
   </div>
 </div>
